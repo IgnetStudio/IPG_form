@@ -7,6 +7,7 @@
     <title>Form</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/awsm.min.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="js/modernizr-2.8.3.min.js"></script>
 </head>
@@ -29,9 +30,8 @@
     </section>
 -->
     <section class="validForm">
-        <h2>Valid</h2>
         <div class="container">
-            <h1>Walidacja formularza</h1>
+            <h2>Walidacja formularza</h2>
             <form action="#" id="ipgFormValid">
                 <input type="text" name="your-name" placeholder="Imię i nazwisko" data-error="Podaj imię i nazwisko">
                 <input type="email" name="your-email" placeholder="Adres e-mail" data-error="Podaj poprawny adres e-mail">
@@ -46,8 +46,33 @@
             </form>
         </div>
     </section>
+    <hr>
+    <section class="inputAlert">
+       <div class="container">
+       <h2>Input alert</h2>
+        <form>
+            <input type="text" name="name" id="yourName" placeholder="Imię" value="">
+            <input type="text" name="surname" id="yourSurname" placeholder="Nazwisko" value="">
+            <button id="button" type="submit">Wyświetl</button>
+        </form>
+        </div>
+    </section>
+    <hr>
+    <section class="inputPrinter">
+       <div class="container">
+        <h2>Printer</h2>
+        <form>
+            <input type="text" id="inputTitle">
+            <input type="text" id="inputContent"> </form>
+        <p id="printTitle"> </p>
+        <p id="printContent"> </p>
+        </div>
+    </section>
     <!--    <script src="js/prevent.js"></script>-->
     <script src="js/valid.js"></script>
+    <script src="js/input_alert.js"></script>
+    <script src="js/input_printer.js"></script>
+    
 </body>
 
 </html>

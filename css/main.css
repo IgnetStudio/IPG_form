@@ -36,7 +36,7 @@ h1 {
 }
 
 h2 {
-    padding: 15px;
+    padding: 15px 0;
 }
 
 ul.errors {
@@ -110,11 +110,15 @@ form textarea {
 
 form button[type='submit'] {
     padding: 0 30px;
-    height: 40px;
+    height: 35px;
     float: right;
     border: none;
     background: blue;
     cursor: pointer;
     font: 14px/35px Georgia, display;
     color: white;
+}
+
+hr {
+    height: 5px;
 }
