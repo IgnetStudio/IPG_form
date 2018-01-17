@@ -13,66 +13,68 @@
 </head>
 
 <body>
-    <!--
-    <section class="preventForm">
-        <h2>Prevent</h2>
-    <form action="" id="ipgForm">
-        <input type="text" id="ipgInput" name="ipgInput">
-        <input type="submit" value="Wyślij">
-    </form>
-    <br>
-    <br>
-    <a href="#ipgHidden" id="ipgMessage">Pokaż wiadomość</a>
-    <div id="ipgHidden">Ukryta wiadomość</div>
-    <hr>
-    <img src="img/ipgPicture.png" class="ipgPicture" alt="">
-    <p class="ipgText">Tekst</p>
-    </section>
--->
+
     <section class="validForm">
         <div class="container">
             <h2>Walidacja formularza</h2>
             <form action="#" id="ipgFormValid">
-                <input type="text" name="your-name" placeholder="Imię i nazwisko" data-error="Podaj imię i nazwisko">
-                <input type="email" name="your-email" placeholder="Adres e-mail" data-error="Podaj poprawny adres e-mail">
-                <select name="your-subject" data-error="Wybierz temat wiadomości">
+                <input id="ipgFormName" type="text" name="your-name" placeholder="Imię i nazwisko" data-error="Podaj imię i nazwisko">
+                <input id="ipgFormEmail" type="email" name="your-email" placeholder="Adres e-mail" data-error="Podaj poprawny adres e-mail">
+                <select id="ipgFormSubject" name="your-subject" data-error="Wybierz temat wiadomości">
                     <option value="" disabled selected>- Temat wiadomości -</option>
                     <option value="pytanie">Pytanie</option>
                     <option value="propozycja">Propozycja</option>
                     <option value="support">Support</option>
                 </select>
-                <textarea name="your-message" placeholder="Treść wiadomości" data-error="Wpisz treść wiadomości - co najmniej 10 znaków"></textarea>
+                <textarea id="ipgFormMessage" name="your-message" placeholder="Treść wiadomości" data-error="Wpisz treść wiadomości - co najmniej 10 znaków"></textarea>
                 <button type="submit">Wyślij</button>
             </form>
         </div>
     </section>
     <hr>
     <section class="inputAlert">
-       <div class="container">
-       <h2>Input alert</h2>
-        <form>
-            <input type="text" name="name" id="yourName" placeholder="Imię" value="">
-            <input type="text" name="surname" id="yourSurname" placeholder="Nazwisko" value="">
-            <button id="button" type="submit">Wyświetl</button>
-        </form>
+        <div class="container">
+            <h2>Input alert</h2>
+            <form>
+                <input type="text" name="name" id="yourName" placeholder="Imię" value="">
+                <input type="text" name="surname" id="yourSurname" placeholder="Nazwisko" value="">
+                <button id="button" type="submit">Wyświetl</button>
+            </form>
         </div>
     </section>
     <hr>
     <section class="inputPrinter">
-       <div class="container">
-        <h2>Printer</h2>
-        <form>
-            <input type="text" id="inputTitle">
-            <input type="text" id="inputContent"> </form>
-        <p id="printTitle"> </p>
-        <p id="printContent"> </p>
+        <div class="container">
+            <h2>Printer</h2>
+            <form>
+                <input type="text" id="inputTitle">
+                <input type="text" id="inputContent"> </form>
+            <p id="printTitle"> </p>
+            <p id="printContent"> </p>
         </div>
     </section>
+    <!--
+        <section class="preventForm">
+            <h2>Prevent</h2>
+        <form action="" id="ipgForm">
+            <input type="text" id="ipgInput" name="ipgInput">
+            <input type="submit" value="Wyślij">
+        </form>
+        <br>
+        <br>
+        <a href="#ipgHidden" id="ipgMessage">Pokaż wiadomość</a>
+        <div id="ipgHidden">Ukryta wiadomość</div>
+        <hr>
+        <img src="img/ipgPicture.png" class="ipgPicture" alt="">
+        <p class="ipgText">Tekst</p>
+        </section>
+    -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <!--    <script src="js/prevent.js"></script>-->
     <script src="js/valid.js"></script>
     <script src="js/input_alert.js"></script>
     <script src="js/input_printer.js"></script>
-    
+
 </body>
 
 </html>
