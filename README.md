@@ -1,6 +1,6 @@
 ## Description
 
-Simple page with JavaScript (form) experiments.
+Simple page with JavaScript & PHP (form) experiments.
 
 ## Installation
 

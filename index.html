@@ -18,15 +18,15 @@
         <div class="container">
             <h2>Walidacja formularza</h2>
             <form action="#" id="ipgFormValid">
-                <input id="ipgFormName" type="text" name="your-name" placeholder="Imię i nazwisko" data-error="Podaj imię i nazwisko">
-                <input id="ipgFormEmail" type="email" name="your-email" placeholder="Adres e-mail" data-error="Podaj poprawny adres e-mail">
-                <select id="ipgFormSubject" name="your-subject" data-error="Wybierz temat wiadomości">
+                <input id="ipgFormName" type="text" name="user" placeholder="Imię i nazwisko" data-error="Podaj imię i nazwisko">
+                <input id="ipgFormEmail" type="email" name="email" placeholder="Adres e-mail" data-error="Podaj poprawny adres e-mail">
+                <select id="ipgFormSubject" name="subject" data-error="Wybierz temat wiadomości">
                     <option value="" disabled selected>- Temat wiadomości -</option>
                     <option value="pytanie">Pytanie</option>
                     <option value="propozycja">Propozycja</option>
                     <option value="support">Support</option>
                 </select>
-                <textarea id="ipgFormMessage" name="your-message" placeholder="Treść wiadomości" data-error="Wpisz treść wiadomości - co najmniej 10 znaków"></textarea>
+                <textarea id="ipgFormMessage" name="message" placeholder="Treść wiadomości" data-error="Wpisz treść wiadomości - co najmniej 10 znaków"></textarea>
                 <button type="submit">Wyślij</button>
             </form>
         </div>
